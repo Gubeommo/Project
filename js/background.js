@@ -59,7 +59,6 @@ function chageimage(){
 
 function happyImage(){
   statusCondition =0;
-  
   hiddenstatus()
 }
 
