@@ -54,7 +54,7 @@ p{
     align-items: flex-start;
     justify-content: flex-end;
 }
-h1#greeting {
+#greeting h1{
     font-size : 25px;
     margin-top: 0px;
     margin-right: 10px;
@@ -195,16 +195,27 @@ h1#greeting {
     width: 100%;
     height: 100%;
    
-    justify-content: center;
+    
     transition:1s;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 #mainment{
-    font-size: 20px;
+  
     color: white;
+    margin-top: 1px;
+    margin-right : 5px;
+    color: white;
+    transition:1s;
+
+
 }
 #subment{
     font-size: 15px;
     color: white;
+    transition:1s;
+    
 }
 
 
@@ -221,9 +232,31 @@ h1#greeting {
     border-bottom-color: rgb(5 69 90);
 }
 
-
-
-
+#musicsay{
+    
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+#music{
+    margin-left: 10px;
+    height: 50px;
+    opacity: 5;
+    transition: 0.5s ease-in-out;
+    width: 100px;
+}
+#music:hover{
+    opacity: 5;
+    transition: 0.5s ease-in-out;
+    width: 300px;
+}
+#align-music{
+    display: flex;
+    align-items: center;
+}
+#music-text{
+    color:white;
+}
 .sidenav {
     height:100%;
     width: 0;

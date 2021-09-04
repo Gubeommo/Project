@@ -5,6 +5,7 @@ const fristDiv = document.querySelector("#first");
 const viewTodo = document.querySelector("#todopage");
 const viewStatusSay = document.querySelector("#align-status-text");
 const viewStatus = document.querySelector("#status-div");
+const viewmusicgree = document.querySelector("#musicsay");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username"
@@ -24,6 +25,8 @@ function greetings(username){
     viewStatusSay.classList.remove(HIDDEN_CLASSNAME);
     viewStatus.style.display = "flex";
     viewStatusSay.style.display = "flex";
+    viewmusicgree.classList.remove(HIDDEN_CLASSNAME);
+    viewmusicgree.style.display = "flex";
 }
 const savedUserName = localStorage.getItem(USERNAME_KEY);
 
