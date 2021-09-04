@@ -123,5 +123,5 @@ if(savedDonelist !== null){
     parsedDoneToDos.forEach(doneToDoPro);
  }
  
- console.log("gk" );
+
 

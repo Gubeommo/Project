@@ -132,9 +132,9 @@ h1#greeting {
 #align-status-text{
     width: 100%;
     height: 100%;
-    display: flex;
+   
     justify-content: center;
-    
+    transition:1s;
 }
 #saystatus{
     color: white;
@@ -144,8 +144,9 @@ h1#greeting {
 #status-div {
     width: 100%;
     height: 100%;
-    display: flex;
+    
     justify-content: center;
+    transition:2s;
 }
 #sad {
     font-size : 20px;
@@ -186,6 +187,24 @@ h1#greeting {
     background-color: rgba(255, 14, 6, 0.664);
     border: none;
     width : 60px;
+}
+
+
+/*상태에 따른 메세지 부분*/
+#speak{
+    width: 100%;
+    height: 100%;
+   
+    justify-content: center;
+    transition:1s;
+}
+#mainment{
+    font-size: 20px;
+    color: white;
+}
+#subment{
+    font-size: 15px;
+    color: white;
 }
 
 

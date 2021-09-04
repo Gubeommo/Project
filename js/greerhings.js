@@ -3,6 +3,8 @@ const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 const fristDiv = document.querySelector("#first");
 const viewTodo = document.querySelector("#todopage");
+const viewStatusSay = document.querySelector("#align-status-text");
+const viewStatus = document.querySelector("#status-div");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username"
@@ -18,6 +20,10 @@ function greetings(username){
     greeting.innerHTML = `Welcome ${username}`;    //간단하게 바꿀수 있다. + 기호 사용 X
     greeting.classList.remove(HIDDEN_CLASSNAME);
     viewTodo.classList.remove(HIDDEN_CLASSNAME);
+    viewStatus.classList.remove(HIDDEN_CLASSNAME);
+    viewStatusSay.classList.remove(HIDDEN_CLASSNAME);
+    viewStatus.style.display = "flex";
+    viewStatusSay.style.display = "flex";
 }
 const savedUserName = localStorage.getItem(USERNAME_KEY);
 
